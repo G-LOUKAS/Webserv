@@ -18,46 +18,6 @@
 - 📂 Directory listing (optional)
 - ♻️ Non-blocking I/O with `select()`
 
-## 🧠 Project Structure
-
-```
-webserv/
-├── srcs/
-│   ├── config/             # Config file parser
-│   ├── http/               # HTTP request/response handling
-│   ├── server/             # Socket setup, events, and main loop
-│   ├── cgi/                # CGI execution and response
-│   └── utils/              # Helper functions and classes
-├── www/                    # Static files served by the server
-├── errors_pages/           # Custom error pages (e.g., 404.html)
-├── conf/                   # Sample configuration files
-└── Makefile
-```
-
-## 🏗️ Build Instructions
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/yourusername/webserv.git
-   cd webserv
-   ```
-
-2. **Build the server**:
-   ```bash
-   make
-   ```
-
-3. **Run with config**:
-   ```bash
-   ./webserv conf/default.conf
-   ```
-
-## 🧪 Testing the Server
-
-- Point your browser or `curl` to `http://localhost:PORT`
-- Test file uploads (POST), deletions (DELETE), and error responses
-- Use tools like `ab`, `curl`, and `telnet` for benchmarking and raw testing
-
 ## 🛠 Configuration Example
 
 ```conf
